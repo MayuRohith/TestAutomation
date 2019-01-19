@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testNGgroup">
+	<test name="TestNG Grouping">
+		<groups>
+		<run >
+		<include name="B"/>
+		<include name="A"/>
+		</run>
+		</groups>
+		<classes>
+			<class name="com.mayuautomation.selenium.com.mayuautomation.selenium.testNG.NewGroupingTestNG"/>
+			<class name="com.mayuautomation.selenium.com.mayuautomation.selenium.testNG.GroupingTestNG" />	
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestParallelTest" parallel="tests">
+	<test name="TestNGAssertRun">
+		<classes>
+			<class name="com.mayuautomation.selenium.com.mayuautomation.selenium.testNG.TestTestNGAssertion"/>
+			<class name="com.mayuautomation.selenium.com.mayuautomation.selenium.testNG.NewTestFaccebookLogin"/>
+			</classes>
+	</test>
+</suite>

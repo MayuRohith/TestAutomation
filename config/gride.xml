@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="testGrid" parallel="tests">
+	<test name="verifyGrid1">
+		<classes>
+			<class name="com.Grid.Node1"></class>
+		</classes>
+	</test>
+	<test name="verifyGrid2">
+		<classes>
+			<class name="com.Grid.Node2"></class>
+		</classes>
+	</test>
+</suite>

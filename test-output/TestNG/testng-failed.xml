@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testNG]">
+  <test thread-count="5" name="Test Automation(failed)">
+    <classes>
+      <class name="com.guru99.automation.TryTestNG">
+        <methods>
+          <include name="support"/>
+          <include name="goBackToHome"/>
+          <include name="register"/>
+          <include name="verifyHomePage"/>
+          <include name="terminate"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.guru99.automation.TryTestNG -->
+    </classes>
+  </test> <!-- Test Automation(failed) -->
+</suite> <!-- Failed suite [testNG] -->
