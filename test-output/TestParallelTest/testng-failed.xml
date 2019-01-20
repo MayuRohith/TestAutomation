@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestParallelTest]" parallel="classes">
-  <test thread-count="5" name="TestNGAssertRun(failed)" parallel="classes">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestParallelTest]" parallel="tests">
+  <test thread-count="5" name="TestNGAssertRun(failed)" parallel="tests">
     <classes>
       <class name="com.mayuautomation.selenium.com.mayuautomation.selenium.testNG.TestTestNGAssertion">
         <methods>

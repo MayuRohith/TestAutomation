@@ -39,23 +39,22 @@ public class GenerateExtentReport {
 				new File(System.getProperty("user.dir") + "/AutomationReport.html"));
 		extentHtmlReporter.loadXMLConfig(new File(System.getProperty("user.dir") + "/ReportsConfig.xml"));
 		extentReports = new ExtentReports();
-//		extentReports.setSystemInfo("Environment", "QA");
-//		extentReports.attachReporter(extentHtmlReporter);
+		extentReports.setSystemInfo("Environment", "QA");
+		extentReports.attachReporter(extentHtmlReporter);
 
 		System.setProperty("webdriver.chrome.driver", driverPath);
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(baseUrl);
-
 	}
 
 	@Test(priority = 0, testName = "Check Login Button Work Correct")
-	public void loginButtonWOrkVerification() {
+	public void loginButtonWorkVerification() {
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.id("btnLogin")).click();
-		String expected = "Welcome Admi";
+		String expected = "Welcome Admin";
 		String actual = driver.findElement(By.id("welcome")).getText();
 		assertEquals(actual, expected);
 		extentTest.log(Status.INFO, "Assert Pass as condition is True");

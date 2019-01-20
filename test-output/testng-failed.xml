@@ -3,16 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.guru99.automation.GenerateExtentReport">
+      <class name="com.testDataDriven.TestDrivenWithExcel">
         <methods>
-          <include name="loginButtonWOrkVerification"/>
-          <include name="startReport"/>
-          <include name="addUser"/>
-          <include name="getResult"/>
-          <include name="getResult"/>
-          <include name="endreport"/>
+          <include name="setUp"/>
+          <include name="testLogin" invocation-numbers="0 2"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- com.guru99.automation.GenerateExtentReport -->
+      </class> <!-- com.testDataDriven.TestDrivenWithExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
